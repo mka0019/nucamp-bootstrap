@@ -90,15 +90,15 @@
                 </div>
             </div>
         </div>
-
-        <div class="row row-content align-items-center">
+        <!-- reseve campsite form -->
+        <div id="reserveForm" class="row row-content align-items-center">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
                     <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
                     <div class="card-body">
                         <form action="">
                             <div class="row form-group">
-                                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
                                 <div class="col-sm-6">
                                     <select class="form-control" name="numCampers" id="numCampers">
                                         <option value="select">Select...</option>
@@ -111,7 +111,17 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row"></div>
+                            <div class="row form-group">
+                                <label for="date"class="col-sm-6 col-form-label" placeholder="mm/dd/yyyy">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date" name="date" id="date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col">
+                                   <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
