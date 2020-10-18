@@ -7,44 +7,48 @@
       rgba(0, 0, 0, 0.5)
     ),
     /* bottom, image */
-    url(../img/banner-home3.jpg);
+    url(../img/sunrise-camping.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
 }
-
-
-/* .jumbotron .overlay:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    background: rgba(0, 0, 0, .5);
-    width:100%;
-    height:500px;
-} */
-
-/* .jumbotron .container{
-    top: 0;
-    position: absolute;
-    height: 500px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
-} */
 
 h1, h2, h3{
     /* font-family: 'Lato', sans-serif; */
     font-family: 'Bree Serif', serif;
 } 
 
-#myButton {
-    position: fixed;
-    bottom: -4px;
-    right: 10px;
-  }
+.reserve-login-section .rs-block{
+    padding:50px;
+    height: 300px;
+    color: white;
+}
+
+.reserve-btm{
+    background-image:url(../img/camping-reserve.jpg);
+}
+
+.login-btm{
+    background-image:url(../img/camping-login.jpg);
+}
+
+.reserve-btm, .login-btm{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    transition: all .2s ease-in-out;
+}
+
+.reserve-btm:hover, .login-btm:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
 
 
-  @media (max-width: 575.98px){ 
-    #myButton {
-        display:none;
-      }
-  }
+
+@media (max-width: 575.98px) {
+    .jumbotron{
+        height:300px;
+    }
+} 
