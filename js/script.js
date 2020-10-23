@@ -15,3 +15,17 @@ $(function() {
                 }
             });
 });
+
+//login and reserve button 
+
+$(function(){
+    //reserve button
+    $("#reserveButton").click(function(){
+        $("#reserveModal").modal('toggle');
+    });
+    
+    //login button
+    $("#loginButton").click(function(){
+        $("#loginModal").modal('toggle');
+    });
+});

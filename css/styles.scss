@@ -3,6 +3,8 @@ $color-secondary: #5637dd;
 $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
+$color-white: #ffffff;
+$color-teal:#17A2B8;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $body-font: "Open Sans", sans-serif;
@@ -29,7 +31,7 @@ header h2 {
 }
 
 footer {
-    background-image: linear-gradient($color-pale, white);
+    background-image: linear-gradient($color-pale, $color-white);
     padding: 20px 0;
 }
 
@@ -37,7 +39,7 @@ footer {
     margin: 0;
     padding: 30px;
     background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
-    color: white;
+    color: $color-white;
 }
 
 .row-content {
@@ -59,4 +61,18 @@ footer {
     right: 0;
     bottom: 0;
     z-index: 100;
+}
+
+#reserveModal{
+    .modal-header{
+        background-color:$color-teal;
+        color:$color-white;
+    }
+}
+
+#loginModal{
+    .modal-header{
+        background-color:$color-mid;
+        color:$color-white;
+    }
 }
